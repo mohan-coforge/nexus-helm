@@ -49,7 +49,7 @@ jobs:
       id: push-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: gitops-argocd
+        ECR_REPOSITORY: nexus-repo
 
       run: |
         echo "Pushing image to ECR..."
